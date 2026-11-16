@@ -1,8 +1,4 @@
-
-
-
-
-#2
+# 2
 # num = int(input("Введите число: "))
 #
 # if num > 0:
@@ -20,8 +16,7 @@
 # print(res)
 
 
-
-#3
+# 3
 # a = int(input("a: "))
 # b = int(input("b: "))
 # c = int(input("c: "))
@@ -37,8 +32,7 @@
 #     print(c)
 
 
-
-#4
+# 4
 # a = []
 # for i in range(1, 6):
 #     num = int(input("Введите оценки: "))
@@ -59,8 +53,7 @@
 #     print("Повторить")
 
 
-
-#5
+# 5
 # num = int(input("Введите число: "))
 # a = 0
 # for i in range(1, num + 1):
@@ -68,24 +61,91 @@
 # print(a)
 
 
-#6
+# 6
 # num = int(input("Введите число: "))
 # for i in range(1, 11):
 #     print(f"{num} x {i} = {num * i}")
 
 
-#7
+# 7
 # num = int(input("Введите число: "))
 # a = 0
 # for i in range(1, num + 1):
 #     a += 1
 # print(a)
 
-#8
+# 8
 # text = input("Введите текст: ")
 # print(text[::-1])
 
-#9
+# 9
+# a = []
+# for i in range(1, 11):
+#     user_num = int(input("Введите число: "))
+#     a.append(user_num)
+#
+# b = 0
+# c = 0
+# summ = 0
+# for res in a:
+#     if res % 2 == 0:
+#         summ += res
+#         b += 1
+#         print(f"Количество четных чисел: {b}")
+#     elif res % 2 == 1:
+#         c += 1
+#         print(f"Количество нечетных чисел: {c}")
+# print(f"Сумма четных чисел: {summ}")
 
 
+# 10
+# num = [1,2,2,3,44,5,6,77,8,9,9]
+# n = []
+# for i in num:
+#     if i not in n:
+#         n.append(i)
+# print(n)
+
+
+# 11
+
+# user = int(input("Введите число: "))
+#
+# if user > 1:
+#     for i in range(2, user):
+#         if user % i == 0:
+#             print(f"Число составное {user}")
+#             break
+#     else:
+#         print("Простое")
+# else:
+#     print("Число должен быть больше 1")
+
+
+# 12
+
+# user = int(input("Введите число: "))
+#
+# res = 1
+# while user > 0:
+#     ot = user % 10
+#     res *= ot
+#     user //= 10
+# print(res)
+
+
+#13
+# num = int(input("Введите число: "))
+# orig = num
+# res =0
+#
+# while num > 0:
+#     o = num % 10
+#     res = res * 10 + o
+#     num //= 10
+#
+# if res == orig:
+#     print("Полидром")
+# else:
+#     print("Не полидром")
 
