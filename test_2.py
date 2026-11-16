@@ -1,0 +1,242 @@
+# 1 задание
+# a = 1
+# while a <= 10:
+#     print(a)
+#     a = a + 1
+
+# 2 задание
+# a = 10
+# while a > 0:
+#     print(a)
+#     a = a - 1
+
+# 3 задание
+# a = 1
+# while a <= 30:
+#     if a % 2 == 0:
+#         print(a)
+#     a += 1
+
+
+# 4 задание
+# a = 1
+# while a <= 30:
+#     if a % 2 == 1:
+#         print(a)
+#     a += 1
+
+
+# 5 задание
+# a = 1
+# while a <= 50:
+#     if a % 5 == 0:
+#         print(a)
+#     a = a + 1
+
+
+# 6 задание
+# a = 1
+# b = 0
+# while a <= 50:
+#     b += a
+#     a += 1
+# print(b)
+
+
+# 7 задание
+# a = 1
+# b = 0
+# while a <= 50:
+#     if a % 2 == 0:
+#         b += a
+#     a += 1
+#
+# print(b)
+
+
+# 8 задание
+# a = 1
+# b = 0
+# while a <= 50:
+#     if a % 2 == 1:
+#         b += a
+#     a += 1
+#
+# print(b)
+
+# 8 задание
+# a = 1
+# while a <= 10:
+#    print(a ** 2)
+#    a += 1
+
+
+# 9 задание
+# a = 1
+# n = int(input("Введите число: "))
+# while a <= n:
+#     print(a)
+#     a += 1
+
+# 10 задание
+# a = 1
+# b = 0
+# n = int(input("Введите чмсло: "))
+# while a <= n:
+#     b += a
+#     a += 1
+# print(b)
+
+# 11 задание
+# while True:
+#     a = int(input("Введите число: "))
+#     if a == 0:
+#         print("Цикл остановлен")
+#         break
+#     else:
+#         continue
+# print(a)
+
+# 12 задание
+# while True:
+#     a = int(input("Введите чмсло: "))
+#     if a < 0:
+#         print("Цикл остановлен")
+#         break
+#     else:
+#         continue
+# print(a)
+
+# 13 задание
+# while True:
+#     password = input("Введите пароль: ")
+#     if password == "python123":
+#         print("Пароль правильный")
+#         break
+#     else:
+#         print("Неправильный пароль")
+#         continue
+
+# 14 задание
+# while True:
+#     a = int(input("Введите число: "))
+#     if 1 <= a <= 10:
+#         print("Цикл остановлен")
+#         break
+#     else:
+#         continue
+
+# 15 задание
+# a = 0
+# b = 0
+# while a < 5:
+#     n = int(input("Введите число: "))
+#     b += n
+#     a += 1
+# print("Сумма: ",b)
+
+# 16 задание
+# a = 0
+# b = 0
+# while True:
+#     count = int(input("Введите число: "))
+#     if count == 0:
+#         print("Цикл остановлен")
+#         break
+#     b +=count
+#     a +=1
+# print("Сумма: ", b)
+
+# 17 задание
+# a = 0
+#
+# while True:
+#     nom = int(input("Введите число: "))
+#     if nom != 0:
+#         if nom % 2 == 0:
+#             a += 1
+#     print("Сумма всех введенных чисел: ", a)
+#     print("Введите 0 чтоб закончить цикл")
+
+# 18 задание
+# a = 0
+# print("Для окончание 0")
+# while True:
+#     number = int(input("Вводите числа: "))
+#     if number == 0:
+#         break
+#     elif number > 0:
+#         a += 1
+#     print("Для окончание 0")
+# print("Сумма положительных чисел: ", a)
+
+# 19 задание
+# num = 1
+# number = int(input("Введите число: "))
+# while number <= 10:
+#     print(f"{number} * {num} = {number * num}")
+#     num += 1
+#     if num == 11:
+#         break
+
+
+# 20 задание
+# while True:
+#     number = int(input("Ваше число: "))
+#     if number == 7:
+#         print("Число угадано")
+#         break
+#     else:
+#         print("Пока не угадал правильное")
+#         continue
+
+# a = []
+# total = 0
+# for i in range(1, 6):
+#     user = int(input("Введите число: "))
+#     a.append(user)
+#
+# for i in a:
+#     if i % 2 == 0:
+#         total += i
+#         print(i)
+#
+# print(total)
+
+
+# numbers = [4, 7, 2, 9, 6]
+# a = []
+#
+# for num in numbers:
+#     if num % 2 == 0:
+#         a += [num]
+# print(f"Четные числа: {a}")
+# print(f"Сумма: {sum(a)}")
+
+
+
+# a = []
+# b = []
+# v = []
+# for i in range(1, 9):
+#     user = int(input("Введите число: "))
+#     if user > 0:
+#         a.append(user)
+#     elif user < 0:
+#         b.append(user)
+#     else:
+#         v.append(user)
+# print(len(f"Положительные числа: {len(a)}"))
+# print(len(f"Отрицательные числа: {len(b)}"))
+# print(len(f"Нули: {len(v)}"))
+
+
+
+a = []
+
+for i in range(1, 7):
+    user = int(input("Введите число: "))
+    a.append(user)
+
+for i in a:
+
