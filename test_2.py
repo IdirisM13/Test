@@ -232,11 +232,11 @@
 
 
 
-a = []
-
-for i in range(1, 7):
-    user = int(input("Введите число: "))
-    a.append(user)
-
-for i in a:
+# a = []
+#
+# for i in range(1, 7):
+#     user = int(input("Введите число: "))
+#     a.append(user)
+#
+# for i in a:
 
