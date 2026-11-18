@@ -191,6 +191,71 @@
 # print(f"Количество: {len(unique)}")
 
 
-user_text = input("Введите текст: ").lower()
+# text = input("Введите предложение: ")
+#
+# text = text.lower()
+#
+# for symbol in ".,!?":
+#     text = text.replace(symbol, "")
+#
+# words = text.split()
+#
+# print("Количество слов:", len(words))
+#
+# longest_word = words[0]
+#
+# for word in words:
+#     if len(word) > len(longest_word):
+#         longest_word = word
+#
+# print("Самое длинное слово:", longest_word)
+
+
+# numbers = [2, 5, 2, 8, 5, 2, 9, 8, 5, 1]
+#
+# dic ={}
+# for number in numbers:
+#     if number in dic:
+#         dic[number] += 1
+#     else:
+#         dic[number] = 1
+# print(dic)
+
+
+
+# def analyze_numbers(numbers):
+#     # numbers = [10, 3, 20, 5, 7]
+#     maximum = numbers[0]
+#     minimum = numbers[0]
+#     total = 0
+#     even = 0
+#     odd = 0
+#
+#     for num in numbers:
+#         if num > maximum:
+#             maximum = num
+#         if num < minimum:
+#             minimum = num
+#     for num2 in numbers:
+#         if num2 % 2 == 0:
+#             even = even + 1
+#         else:
+#             odd = odd + 1
+#     for num3 in numbers:
+#         total += num3
+#
+#     result = {
+#         "max": maximum,
+#         "min": minimum,
+#         "sum": total,
+#         "even": even,
+#         "odd": odd
+#     }
+#
+#     return result
+# print(analyze_numbers([10, 3, 20, 5, 7]))
+
+
+
 
 
