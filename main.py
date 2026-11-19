@@ -134,7 +134,7 @@
 # print(res)
 
 
-#13
+# 13
 # num = int(input("Введите число: "))
 # orig = num
 # res =0
@@ -222,7 +222,6 @@
 # print(dic)
 
 
-
 # def analyze_numbers(numbers):
 #     # numbers = [10, 3, 20, 5, 7]
 #     maximum = numbers[0]
@@ -254,6 +253,183 @@
 #
 #     return result
 # print(analyze_numbers([10, 3, 20, 5, 7]))
+
+
+# def student_info(**kwargs):
+#     for key, value in kwargs.items():
+#         print(f"{key}: {value}")
+#
+# name = input("Name: ")
+# age = int(input("Age: "))
+# language = input("Language: ")
+# level = input("Level: ")
+# student_info(name=name, age=age, language=language, level=level)
+
+
+# def calculate(*args):
+#     maximum = args[0]
+#     minimum = args[0]
+#     summ = 0
+#     for i in args:
+#         if i > maximum:
+#             maximum = i
+#         if i < minimum:
+#             minimum = i
+#         summ += i
+#     res = {
+#         "sum": summ,
+#         "maximum": maximum,
+#         "minimum": minimum
+#     }
+#     return res
+# print(calculate(1, 2, 3, 4, 5))
+
+# def user_profile(*args, **kwargs):
+#     print("Иноформация о пользователе:")
+#     for key, value in kwargs.items():
+#         print(f"{key}: {value}")
+#     print("Языки программирования:")
+#     for i in args:
+#         print(f"{i}")
+#
+#
+# name = input("Name: ")
+# age = int(input("Age: "))
+# level = input("Level: ")
+# user_profile(
+#     "Python",
+#     "Java",
+#     "C++",
+#     name=name,
+#     age=age,
+#     level=level
+# )
+
+
+# numbers = [4, 15, 8, 23, 10, 7, 18, 3, 12, 25]
+# numbers = filter(lambda x: x > 10, numbers)
+# res = list(map(lambda x: x**2, numbers))
+# print(res)
+
+# names = ["Ali", "Timur", "Idiris", "Azamat"]
+#
+# ages = [18, 21, 20, 19]
+# res = dict(zip(names, ages))
+# print(res)
+
+
+# products = ["Ноутбук", "Телефон", "Наушники", "Мышь", "Монитор"]
+# for index, product in enumerate(products, start=1):
+#     print(f"{index}. {product}")
+
+
+# students = [
+#     ("Ali", 85),
+#     ("Timur", 92),
+#     ("Idiris", 78),
+#     ("Azamat", 95),
+#     ("Nursultan", 88)
+# ]
+# print(sorted(students, key=lambda x: x[1], reverse=True))
+
+
+
+# numbers = [12, 18, 24, 30, 36]
+# res = all(map(lambda n: n > 0, numbers))
+# res2 = any(map(lambda n: n > 30, numbers))
+# print(f"Все числа положительные: {res}")
+# print(f"Есть число больше 30: {res2}")
+
+#
+# data = [10, "Python", 3.14, True, [1, 2, 3], (4, 5), {"name": "Ali"}]
+# int_count = 0
+# str_count = 0
+# float_count = 0
+# list_count = 0
+# tuple_count = 0
+# dict_count = 0
+#
+# for item in data:
+#     if isinstance(item, bool):
+#         continue
+#     elif isinstance(item, int):
+#         int_count += 1
+#     elif isinstance(item, float):
+#         float_count += 1
+#     elif isinstance(item, str):
+#         str_count += 1
+#     elif isinstance(item, tuple):
+#         tuple_count += 1
+#     elif isinstance(item, dict):
+#         dict_count += 1
+#     elif isinstance(item, list):
+#         list_count += 1
+# print("int:", int_count)
+# print("str:", str_count)
+# print("float:", float_count)
+# print("list:", list_count)
+# print("tuple:", tuple_count)
+# print("dict:", dict_count)
+
+
+
+
+
+
+# num1 = int(input('Введите первое число: '))
+# operator = input('Выберите оператора (+: -: *: /): ')
+# num2 = int(input('Введите второе число: '))
+#
+# if operator == "+":
+#     summ = num1 + num2
+#     print(f'{num1} + {num2} = {sum}')
+# elif operator == '-':
+#     summ = num1 - num2
+#     print(f'{num1} - {num2} = {summ}')
+# elif operator == '*':
+#     summ = num1 * num2
+#     print(f"{num1} * {num2} = {summ}")
+# elif operator == '/':
+#     summ = num1 / num2
+#     print(f"{num1} / {num2} = {summ}")
+
+
+
+# while True:
+#     print("Калкулятор")
+#     print("1) плюс")
+#     print("2) минус")
+#     print("3) умножение")
+#     print("4) деление")
+#     print("5) выход")
+#
+#     user_num = int(input("Выберите действие: "))
+#     if user_num == 1:
+#         num1 = int(input("Введите первое число: "))
+#         num2 = int(input("Введите второе число: "))
+#         summ = num1 + num2
+#         print(f"вывод: {summ}")
+#     elif user_num == 2:
+#         num1 = int(input("Введите первое число: "))
+#         num2 = int(input("Введите второе число: "))
+#         summ = num1 - num2
+#         print(f"вывод: {summ}")
+#     elif user_num == 3:
+#         num1 = int(input("Введите первое число: "))
+#         num2 = int(input("Введите второе число: "))
+#         summ = num1 * num2
+#         print(f"вывод: {summ}")
+#     elif user_num == 4:
+#         num1 = int(input("Введите первое число: "))
+#         num2 = int(input("Введите второе число: "))
+#         summ = num1 / num2
+#         print(f"вывод: {summ}")
+#     elif user_num == 5:
+#         print("Выход из калкулятора")
+#         break
+#     else:
+#         print("Такого оператора нету")
+#         continue
 
 
 
