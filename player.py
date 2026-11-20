@@ -3,6 +3,8 @@ import time
 while True:
     print("Игра начинается!")
     time.sleep(2)
+    print("Тебе нужно выбраться отсюда")
+    time.sleep(2)
     print("Выбери одну дверь")
     time.sleep(2)
     print("Первый дверь номер 1")
@@ -37,7 +39,7 @@ while True:
             time.sleep(2)
             print("Ты попал в комнату с тигром")
             time.sleep(2)
-            print("Так как тигр уже месяц голодный)")
+            print("Так как тигр уже месяц голодный")
             time.sleep(2)
             print("То он уже умер, ты выжил")
             time.sleep(2)
