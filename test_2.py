@@ -230,13 +230,67 @@
 # print(len(f"Отрицательные числа: {len(b)}"))
 # print(len(f"Нули: {len(v)}"))
 
+# ===== МЕНЕДЖЕР РАСХОДОВ =====
+#
+# 1. Добавить расход
+# 2. Показать все расходы
+# 3. Найти расход
+# 4. Показать общую сумму
+# 5. Статистика по категориям
+# 6. Удалить расход
+# 7. Сохранить данные
+# 8. Выход
+def expense_manager():
+    list_consumption = []
+    while True:
+        print("===== МЕНЕДЖЕР РАСХОДОВ =====")
+        print("1. Добавить расход")
+        print("2. Показать все расходы")
+        print("3. Найти расход")
+        print("4. Показать общую сумму")
+        print("5. Статистика по категориям")
+        print("6. Удалить расход")
+        print("7. Сохранить данные")
+        print("8. Выход")
+        user_num = int(input("Выберите действие: "))
+
+        if user_num == 1:
+            name = input("Название: ")
+            summ = int(input("Сумма: "))
+            category = input("Категория: ")
+            list_consumption.append({
+            "Название": name,
+            "Сумма": summ,
+            "Категория": category
+            })
+            print("Расход усспешно добавлен!")
+        elif user_num == 2:
+            if not list_consumption:
+                print("Расходов нет")
+            else:
+                print("===== ВСЕ РАСХОДЫ =====")
+                for index, item in enumerate(list_consumption, start=1):
+                    print(f"{index}. {item['Название']} | {item['Сумма']} сом | {item['Категория']}")
+
+        elif user_num == 3:
+            for index, item in enumerate(list_consumption, start=1):
+                user_po = input("Введите название: ").lower()
+                if user_po == item["Название"].lower():
+                    print("Найдено:")
+                    print(f"{index}. {item['Название']} | {item['Сумма']} сом | {item['Категория']}")
+                else:
+                    print("Расход не найден")
+        elif user_num == 4:
+            total = 0
+            for sumi in list_consumption:
+                if not sumi:
+                    print("Расходов нет")
+                elif sumi["Сумма"] > 0:
+                    total += sumi["Сумма"]
+            print(f"Всего расходов: {total}")
 
 
-a = []
 
-for i in range(1, 7):
-    user = int(input("Введите число: "))
-    a.append(user)
 
-for i in a:
 
+expense_manager()
