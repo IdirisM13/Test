@@ -214,7 +214,6 @@
 # print(f"Сумма: {sum(a)}")
 
 
-
 # a = []
 # b = []
 # v = []
@@ -259,9 +258,9 @@ def expense_manager():
             summ = int(input("Сумма: "))
             category = input("Категория: ")
             list_consumption.append({
-            "Название": name,
-            "Сумма": summ,
-            "Категория": category
+                "Название": name,
+                "Сумма": summ,
+                "Категория": category
             })
             print("Расход усспешно добавлен!")
         elif user_num == 2:
@@ -289,8 +288,21 @@ def expense_manager():
                     total += sumi["Сумма"]
             print(f"Всего расходов: {total}")
 
-
-
+        elif user_num == 5:
+            if not list_consumption:
+                print("Расходов нет")
+            else:
+                statistics = {}
+                for item in list_consumption:
+                    category = item["Категория"]
+                    summ = item["Сумма"]
+                    if category in statistics:
+                        statistics[category] += summ
+                    else:
+                        statistics[category] = summ
+                print("===== СТАТИСТИКА =====")
+                for category, summ in statistics.items():
+                    print(f"{category}: {summ} сом")
 
 
 expense_manager()
